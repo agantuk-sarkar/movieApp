@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body class="bg-zinc-300">
+    <!-- Nav bar section -->
+    <div class="main-container border-2 border-red-700 min-h-[10vh] relative flex justify-center">
+      <div
+        class="navBar-container border-2 border-red-700 bg-blue-600 w-[70%] h-[8vh] shadow-md fixed top-0 z-[99999] rounded-md mx-auto"
+      >
+        <div
+          class="second-container border-transparent h-full w-full mt-[1rem] flex justify-around font-semibold"
+        >
+          <div>
+            <a class="text-white" href="./home.html">Home</a>
+          </div>
+          <div>
+            <a class="text-white" href="./login.html">Login</a>
+          </div>
+          <div>
+            <a class="text-white" href="./signup.html">SignUp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel images -->
+    <div
+      class="carousel-container border-transparent h-[10vh] w-[95%] mt-[7rem] ml-[3rem] mx-auto relative shadow-md sm:w-[59%] mx-auto md:w-[57%] left-[9rem] lg:w-[61%] left-[3rem] xl:left-[12rem] h-[40vh]"
+    >
+      <div class="carousel-imageContainer w-full h-full"></div>
+      <!-- left and right arrow button -->
+      <span
+        class="left-arrow absolute top-[8rem] left-[1rem] text-2xl cursor-pointer z-50 text-white"
+      >
+        <i class="lni lni-angle-double-left"></i>
+      </span>
+      <span
+        class="right-arrow absolute top-[8rem] right-[1rem] text-2xl cursor-pointer z-50 text-white"
+      >
+        <i class="lni lni-angle-double-right"></i>
+      </span>
+    </div>
+    <!-- sorting by low to high and high to low -->
+    <div
+      class="sorting-container border-transparent h-[7vh] w-full mt-[3rem] flex justify-end"
+    >
+      <select
+        class="border w-[12rem] bg-orange-300 rounded-md cursor-pointer px-2"
+        id="sortByRating"
+      >
+        <option hidden>Sort by : IMDB Rating</option>
+        <option value="low">Low rating</option>
+        <option value="high">High rating</option>
+      </select>
+    </div>
+    <!-- movies section -->
+    <div
+      class="movie-container border-transparent min-h-[70vh] w-[40rem] mx-auto mt-[3rem] mx-5 px-5 grid auto-rows-fr grid-cols-1 gap-[0.5rem] top-[100rem] md:auto-rows-fr grid-cols-3 w-[40%] gap-x-16 ml-[2rem] lg:w-[80%] ml-[4rem] xl:w-[80%] ml-[2%] box-border"
+    ></div>
+  </body>
+</html>
+<script src="../scripts/home.js"></script>

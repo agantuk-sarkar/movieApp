@@ -10,38 +10,31 @@
   <body>
     <!-- Nav bar section -->
     <div
-      class="navBar-container border border-transparent bg-cyan-500 h-[10vh] mx-5 px-5 mt-[1rem] shadow-md fixed top-[1rem]"
+      class="main-container border-2 border-red-700 h-[10vh] relative flex justify-center"
     >
       <div
-        class="second-container border-transparent h-[5vh] w-[30rem] mt-[1rem] ml-[42rem] flex justify-around font-semibold"
+        class="navBar-container border-2 border-red-700 bg-blue-600 w-[70%] h-[10vh] shadow-md fixed top-0 z-[99999] rounded-md"
       >
-        <div>
-          <a href="./pages/home.html">Home</a>
-        </div>
-        <div>
-          <a href="./pages/login.html">Login</a>
-        </div>
-        <div>
-          <a href="./pages/signup.html">SignUp</a>
+        <div
+          class="second-container border-transparent h-full w-full mt-[1rem] flex justify-around font-semibold"
+        >
+          <div>
+            <a class="text-white" href="./pages/home.html">Home</a>
+          </div>
+          <div>
+            <a class="text-white" href="./pages/login.html">Login</a>
+          </div>
+          <div>
+            <a class="text-white" href="./pages/signup.html">SignUp</a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- carousel images -->
-    <div
-      class="carousel-container border-transparent h-[50vh] w-[40rem] mt-[10rem] mx-auto relative shadow-md"
-    >
-      <div class="carousel-imageContainer w-full h-full"></div>
-      <!-- left and right arrow button -->
-      <span
-        class="left-arrow absolute top-[8rem] left-[1rem] text-2xl cursor-pointer z-50 text-white"
-      >
-        <i class="lni lni-angle-double-left"></i>
-      </span>
-      <span
-        class="right-arrow absolute top-[8rem] right-[1rem] text-2xl cursor-pointer z-50 text-white"
-      >
-        <i class="lni lni-angle-double-right"></i>
-      </span>
+    <!-- text section -->
+    <div class="text-container border border-red-600 mt-[5rem] h-[10vh]">
+      <h2 class="text-center font-bold text-xl">
+        Please click above Sign up button to view content
+      </h2>
     </div>
   </body>
 </html>

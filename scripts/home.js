@@ -75,7 +75,7 @@ let movieShows_array = [
       releaseDate: "2023-06-08",
       rating: "5.5",
     },
-  ],
+  ]
 
   localStorage.setItem("movieShows",JSON.stringify(movieShows_array));
 
